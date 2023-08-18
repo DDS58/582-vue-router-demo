@@ -2,9 +2,10 @@
   <nav>
     <div @click="this.$router.go(-1)">Go Back</div>
     <div @click="this.$router.go(1)">Go Forward</div>
+    <router-link to="/before/1">BEFORE</router-link> |
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/demo/0">Demo</router-link> |
+    <router-link to="/demo/1">Demo</router-link> |
     <div @click="this.$router.push({ name: 'prop', params: { id: 1 } })">
       Prop
     </div>
